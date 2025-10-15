@@ -352,3 +352,29 @@ footer p {
       "footer";
   }
 }
+
+
+/* === Assignment 5 Additions === */
+#datetime {
+  font-size: 0.9rem;
+  opacity: 0.85;
+}
+.button.small { padding: 0.4rem 0.75rem; font-size: 0.9rem; }
+
+/* Accordion */
+.accordion { border-top: 1px solid #e5e7eb; }
+.accordion .acc-item { border-bottom: 1px solid #e5e7eb; }
+.accordion .acc-question { display:flex; justify-content:space-between; align-items:center; padding: 0.9rem 0; cursor:pointer; font-weight:600; }
+.accordion .acc-answer { max-height: 0; overflow: hidden; transition: max-height 0.3s ease; padding-right: 0.5rem; }
+.accordion .acc-item.open .acc-answer { padding-bottom: 0.9rem; }
+
+/* Modal */
+#modal { position: fixed; inset: 0; background: rgba(0,0,0,0.45); display: none; align-items: center; justify-content: center; padding: 1rem; }
+#modal.show { display: flex; }
+#modal .modal-card { background: #fff; max-width: 480px; width: 100%; border-radius: 12px; padding: 1rem; box-shadow: 0 10px 30px rgba(0,0,0,0.15); }
+#modal .modal-header { display:flex; align-items:center; justify-content:space-between; margin-bottom: 0.5rem; }
+#modal .close { border: 0; background: transparent; font-size: 1.2rem; cursor: pointer; }
+
+/* Errors */
+.error-msg { color: #d32f2f; font-size: 0.85rem; margin-top: 0.25rem; }
+input[aria-invalid="true"], textarea[aria-invalid="true"] { outline: 2px solid #d32f2f; }

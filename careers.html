@@ -1,0 +1,86 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>Careers | Tam Tam Food</title>
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+  
+<header id="top-banner">
+    <div class="container nav-wrap"><div id="datetime" aria-live="polite"></div>
+      <a class="logo" href="index.html" aria-label="Go to home">Tam Tam <span>Food</span></a>
+      <nav class="nav">
+        <a href="index.html">Home</a>
+        <a href="menu.html">Menu</a>
+        <a href="about.html">About</a>
+        <a href="locations.html">Locations</a>
+        <a href="careers.html">Careers</a>
+        <a href="contact.html">Contact</a>
+        <a href="gallery.html">Gallery</a>
+        <a href="layout.html">Layout</a>
+        <button id="open-modal" class="button small" style="margin-left:0.5rem;">Subscribe</button>
+      </nav>
+    </div>
+  </header>
+
+  
+<section class="section">
+  <div class="container">
+    <h2 class="section-title">Careers</h2>
+    <p class="text-muted">Join our kitchen or front-of-house teams. We love energetic people!</p>
+    <form id="apply-form" action="#" method="post">
+      <label for="fullname">Full Name</label>
+      <input type="text" id="fullname" name="fullname" placeholder="Your name">
+      <label for="role">Role</label>
+      <select id="role" name="role">
+        <option>Cook</option>
+        <option>Cashier</option>
+        <option>Courier</option>
+      </select>
+      <label for="phone">Phone</label>
+      <input type="tel" id="phone" name="phone" placeholder="+7 ...">
+      <label for="apply-email">Email</label>
+      <input type="email" id="apply-email" name="email" placeholder="you@example.com">
+      <label for="password">Password</label>
+      <input type="password" id="password" name="password" placeholder="At least 8 characters">
+      <label for="confirm">Confirm Password</label>
+      <input type="password" id="confirm" name="confirm" placeholder="Re-enter password">
+      <button type="submit" class="button">Apply Now</button>
+    </form>
+  </div>
+</section>
+
+  
+<footer>
+  <div class="container">
+    <p>&copy; 2025 Tam Tam Food. All rights reserved.</p>
+    <p>Group: SE-2413 — Team members: Makhmutov Nursultan, Tamit Burlibaev</p>
+  </div>
+</footer>
+
+
+  <script src="assets/js/main.js"></script>
+
+<div id="modal" role="dialog" aria-modal="true" aria-labelledby="modal-title">
+  <div class="modal-card">
+    <div class="modal-header">
+      <h3 id="modal-title">Subscribe</h3>
+      <button id="close-modal" class="close" aria-label="Close">×</button>
+    </div>
+    <form id="subscribe-form" action="#" method="post">
+      <div class="field">
+        <label for="sub-email">Email</label>
+        <input type="email" id="sub-email" name="email" placeholder="you@example.com" required>
+      </div>
+      <div style="margin-top:0.75rem; display:flex; gap:0.5rem; justify-content:flex-end;">
+        <button type="button" id="close-modal" class="button small">Cancel</button>
+        <button type="submit" class="button">Subscribe</button>
+      </div>
+    </form>
+  </div>
+</div>
+
+</body>
+</html>
